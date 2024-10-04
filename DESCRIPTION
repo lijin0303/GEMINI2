@@ -1,0 +1,36 @@
+Package: gemini2
+Title: A Package Utilized Probabilistic Approach to Identify Genetic Interactions from Pairwise CRISPR Screen 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Ruitong",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "ruitong@broadinstitute.org",
+           comment = c(ORCID = "0000-0002-9227-7191"))
+Description: GEMINI2 uses log-fold changes to model sample-dependent and sample-independent effect,
+	and uses a coordinate ascent approach to infer these effects. The inferred effects
+	are used to score and identify genetic interactions, such as lethality and recovery.
+Depends: R (>= 3.6.0)	
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+biocViews: Software, CRISPR, DataImport
+Imports:
+  dplyr,
+  tidyr,
+  ggplot2,
+  magrittr,
+  mixtools,
+  pbmcapply,
+  parallel,
+  purrr,
+  tibble,
+  openxlsx,
+  RColorBrewer
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
